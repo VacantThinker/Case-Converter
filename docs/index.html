@@ -5,18 +5,40 @@
     <title>Document</title>
     <style>
         div.title {
-
+            font-size: 40px;
+        }
+        textarea {
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+        }
+        button{
+            font-size: 20px;
+            /*border: 1px solid;*/
+            background-color: white;
+            color: orange;
+            width: 200px;
+            height: 30px;
+        }
+        button:hover{
+            background-color: black;
         }
     </style>
 </head>
 <body>
 <div class="title">Case Converter</div>
-<textarea name="" id="" cols="30" rows="10"></textarea>
-<button id="upper-case"></button>
-<button id="lower-case"></button>
-<button id="proper-case"></button>
-<button id="sentence-case"></button>
-<button id="save-text-file"></button>
+<textarea name="" id="" cols="30" rows="10">A few months ago I was nominated for Governor of the great state of New York, to run against Mr. John T. Smith and Mr. Blank J. Blank on an independent ticket. I somehow felt that I had one prominent advantage over these gentlemen, and that was--good character. It was easy to see by the newspapers that if ever they had known what it was to bear a good name, that time had gone by. It was plain that in these latter years they had become familiar with all manner of shameful crimes. But at the very moment that I was exalting my advantage and joying in it in secret, there was a muddy undercurrent of discomfort "riling" the deeps of my happiness, and that was--the having to hear my name bandied about in familiar connection with those of such people. I grew more and more disturbed. Finally I wrote my grandmother about it. Her answer came quick and sharp. She said:
+
+You have never done one single thing in all your life to be ashamed of--not one. Look at the newspapers--look at them and comprehend what sort of characters Messrs. Smith and Blank are, and then see if you are willing to lower yourself to their level and enter a public canvass with them.
+
+It was my very thought! I did not sleep a single moment that night. But, after all, I could not recede.
+
+I was fully committed, and must go on with the fight. As I was looking listlessly over the papers at breakfast I came across this paragraph, and I may truly say I never was so confounded before. </textarea>
+<button id="upper-case">upper-case</button>
+<button id="lower-case">lower-case</button>
+<button id="proper-case">proper-case</button>
+<button id="sentence-case">sentence-case</button>
+<button id="save-text-file">save-text-file</button>
 <script>
     function download(filename, text) {
         let element = document.createElement('a');
